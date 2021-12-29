@@ -1,0 +1,5 @@
+﻿glitterhoof_feast_default_participant_trigger = {
+	NOT = { THIS = ROOT }
+	is_alive = yes
+	is_imprisoned = no
+}
