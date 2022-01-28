@@ -3,3 +3,24 @@
 	is_alive = yes
 	is_imprisoned = no
 }
+
+fp1_remove_stele_new_holder_trigger = {
+	# Is there a rogue stone around?
+	$TITLE$ = { exists = var:stele_commissioner }
+	# And would the new holder want to tear down the stele?
+	OR = {
+		# E.g., because they're a different family and won't maintain it.
+		trigger_if = {  # applies if trigger used through on_action on_title_gain
+			limit = { exists = scope:previous_holder }
+			NOT = { dynasty = scope:previous_holder.dynasty }
+		}
+		trigger_else_if = { # applies if trigger used through character interaction grant_title
+			limit = { exists = scope:actor }
+			NOT = { dynasty = scope:actor.dynasty }
+		}
+		trigger_else = {}
+		# Or because they're subject of the runestone, which means it's memorialising their defeat.
+		## ... Unless they're a ghost. Damned proctors, I guess.
+		this = $TITLE$.var:stele_container
+	}
+}
