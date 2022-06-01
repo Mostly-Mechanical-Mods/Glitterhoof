@@ -99,8 +99,12 @@ feast_main_stable_breakin.0001 = {
 					}
 				}
 				random_participant = {
-					limit = {
+					limit = {		# A Master of the Horse is the perfect accomplice! 
 						glitterhoof_feast_default_participant_trigger = yes # [Glitterhoof] alternate version of the trigger that doesn't exclude players
+						has_court_position = master_of_horse_court_position
+					}
+					alternative_limit = {
+						feast_default_participant_trigger = yes
 						NOT = {
 							this = scope:breakin_stager
 						}

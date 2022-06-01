@@ -1,0 +1,47 @@
+﻿[h1]Gameplay Fixes[/h1]
+[hr][/hr]
+- Fixed the weight modifiers in "A Shadow In The Night" event so court physicians stop digging graves so often
+https://forum.paradoxplaza.com/forum/threads/ck-iii-event-a-shadow-in-the-night-court-event-disproportionately-weighted.1515088/
+events\activities\hold_court_activity\hold_court_events_general.txt
+
+- Fixed events from the Train Commander marshal task not firing
+https://forum.paradoxplaza.com/forum/threads/ck-iii-train-commander-task-seem-not-to-be-working.1510728/
+common\council_tasks\00_marshal_tasks.txt
+
+- Children rulers can no longer interact with themselves in childhood learning events
+events\education_and_childhood\childhood_events.txt
+
+- Children are now twice as likely to get a friend than a bully as intended, and not the other way around
+https://forum.paradoxplaza.com/forum/threads/ck-iii-wrong-weighs-in-childhood-events.1498989/
+events\education_and_childhood\childhood_events.txt
+
+- Feast special main events can now fire properly after one another
+https://forum.paradoxplaza.com/forum/threads/ck-iii-gameplay-wrong-triggers-in-main-feast-events-cause-events-to-not-fire-as-intended.1504478/
+events\activities\feast_activity\main_events\feast_main_befriend_events.txt
+events\activities\feast_activity\main_events\feast_main_live_fowl_events.txt
+events\activities\feast_activity\main_events\feast_main_stable_breakin_events.txt
+events\activities\feast_activity\main_events\feast_main_stew_flood_events.txt
+
+- Feast special main events now include player guests (and not only player hosts), making a dozen previously locked events available to the player, and preventing a player guest from attending feasts where nothing happens
+https://forum.paradoxplaza.com/forum/threads/ck-iii-gameplay-feast-activity-special-main-events-prompt-no-events-to-a-player-guest.1504734/
+Glitterhoof\mod files\common\scripted_triggers\Glitterhoof_scripted_triggers.txt
+
+[h1]error.log Fixes[/h1]
+[hr][/hr]
+- Error in culture_emergence_events.txt
+https://forum.paradoxplaza.com/forum/threads/ck-iii-error-failed-context-switch-in-culture_emergence_events-0003.1511715/
+events\culture_events\culture_emergence_events.txt
+
+- GUI error on the Create Claimant Faction button
+https://forum.paradoxplaza.com/forum/threads/ck-iii-script-undefined-event-target-in-create_claimant_faction_against_interaction.1513929/
+common\character_interactions\00_vassal_interactions.txt
+
+[h1]Removed from Glitterhoof after Vanilla patch[/h1]
+[hr][/hr]
+- Granting a title to a member of your dynasty no longer destroys its runestone
+
+- "The Northerner Menace" event is now prevented from firing if the war has been peaced out in the first 30 days
+https://forum.paradoxplaza.com/forum/threads/ck-iii-the-northerner-menace-lacking-trigger-to-invalidate-it.1493879/
+
+- Vassals no longer have +100 reason to join claimant faction if they are the de jure vassal of their liege, instead they get +100 reason to join if they are the de jure vassal of the claimant
+https://forum.paradoxplaza.com/forum/threads/ck-iii-fixed-script-wrong-modifier-in-claimant_faction_modifiers.1514492/

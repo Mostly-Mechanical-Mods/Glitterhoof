@@ -60,8 +60,10 @@ childhood_ongoing = {
 	random_events = {
 		400 = 0
 		100 = childhood.0001 #Child gets a crush
-		100 = childhood.0003 #Child gets a bully # [Glitterhoof] reversed weights
-		50 = childhood.0005 #Child gets a friend # [Glitterhoof] reversed weights
+		# [Glitterhoof] Reversed weights for consistency with comments in the childhood_events file
+		100 = childhood.0003 #Child gets a bully
+		50 = childhood.0005 #Child gets a friend
+		# [/Glitterhoof]
 		50 = childhood.0007 #Child gets a victim
 		50 = childhood.1000 #Your friendship can turn into a crush
 		50 = childhood.1001 #You make your bully stop being such a bully
@@ -84,6 +86,9 @@ childhood_ongoing = {
 		25 = childhood.2001 #Get a pet cat!
 		25 = childhood.2003 #Get a pet dog!
 		50 = child_personality.0061 # Child may gain a propensity to drinking and lose their shyness by watching their guardian
+		150 = childhood.2100 # Learn the Language of your Guardian
+		150 = childhood.2200 # Learn the Court Language of your Guardian
+		150 = childhood.2300 # Learn the Language of your parent
 	}
 }
 
@@ -136,6 +141,8 @@ on_16th_birthday = {
 		coming_of_age.0005#Diplomacy
 		delay = { days = 1 }
 		childhood_education.0005 #To remove education focus
+		childhood_education.0006 #To remove stray guardians
+		childhood_education.0007 #To remove childhood traits and make sure any education trait is applied
 	}
 }
 
