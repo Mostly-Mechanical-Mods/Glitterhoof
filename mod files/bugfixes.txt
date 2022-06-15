@@ -1,12 +1,8 @@
 ﻿[h1]Gameplay Fixes[/h1]
 [hr][/hr]
-- Fixed the weight modifiers in "A Shadow In The Night" event so court physicians stop digging graves so often
-https://forum.paradoxplaza.com/forum/threads/ck-iii-event-a-shadow-in-the-night-court-event-disproportionately-weighted.1515088/
-events\activities\hold_court_activity\hold_court_events_general.txt
-
-- Fixed events from the Train Commander marshal task not firing
-https://forum.paradoxplaza.com/forum/threads/ck-iii-train-commander-task-seem-not-to-be-working.1510728/
-common\council_tasks\00_marshal_tasks.txt
+- AI now declares Holy wars
+https://forum.paradoxplaza.com/forum/threads/ck-iii-after-1-6-the-ai-no-longer-declares-holy-wars.1530961/#post-28325090
+common\script_values\00_struggle_values.txt
 
 - Children rulers can no longer interact with themselves in childhood learning events
 events\education_and_childhood\childhood_events.txt
@@ -28,10 +24,6 @@ Glitterhoof\mod files\common\scripted_triggers\Glitterhoof_scripted_triggers.txt
 
 [h1]error.log Fixes[/h1]
 [hr][/hr]
-- Error in culture_emergence_events.txt
-https://forum.paradoxplaza.com/forum/threads/ck-iii-error-failed-context-switch-in-culture_emergence_events-0003.1511715/
-events\culture_events\culture_emergence_events.txt
-
 - GUI error on the Create Claimant Faction button
 https://forum.paradoxplaza.com/forum/threads/ck-iii-script-undefined-event-target-in-create_claimant_faction_against_interaction.1513929/
 common\character_interactions\00_vassal_interactions.txt
@@ -45,3 +37,15 @@ https://forum.paradoxplaza.com/forum/threads/ck-iii-the-northerner-menace-lackin
 
 - Vassals no longer have +100 reason to join claimant faction if they are the de jure vassal of their liege, instead they get +100 reason to join if they are the de jure vassal of the claimant
 https://forum.paradoxplaza.com/forum/threads/ck-iii-fixed-script-wrong-modifier-in-claimant_faction_modifiers.1514492/
+
+- Fixed the weight modifiers in "A Shadow In The Night" event so court physicians stop digging graves so often
+https://forum.paradoxplaza.com/forum/threads/ck-iii-event-a-shadow-in-the-night-court-event-disproportionately-weighted.1515088/
+events\activities\hold_court_activity\hold_court_events_general.txt
+
+- Fixed events from the Train Commander marshal task not firing
+https://forum.paradoxplaza.com/forum/threads/ck-iii-train-commander-task-seem-not-to-be-working.1510728/
+common\council_tasks\00_marshal_tasks.txt
+
+- Error in culture_emergence_events.txt
+https://forum.paradoxplaza.com/forum/threads/ck-iii-error-failed-context-switch-in-culture_emergence_events-0003.1511715/
+events\culture_events\culture_emergence_events.txt
